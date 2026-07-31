@@ -315,7 +315,7 @@ st.markdown("""
         color: #94a3b8;
     }
 </style>
-""", unsafe_allow_headers=True)
+""", unsafe_allow_html=True)
 
 # Initialize Session States
 if "variations" not in st.session_state:
