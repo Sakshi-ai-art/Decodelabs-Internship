@@ -1,9 +1,14 @@
 import streamlit as st
 import pandas as pd
 
+import os
+
 st.title("AI Career Recommendation System")
 
-df = pd.read_csv("careers.csv")
+# Get path relative to the script location for robust deployment
+base_dir = os.path.dirname(__file__)
+csv_path = os.path.join(base_dir, "careers.csv")
+df = pd.read_csv(csv_path)
 
 all_skills = [
     "Python","SQL","Excel","Power BI",
