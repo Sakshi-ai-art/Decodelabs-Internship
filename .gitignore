@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build directories
+dist/
+build/
+backend/dist/
+
+# Environment variables & secrets (CRITICAL)
+.env
+backend/.env
+secrets.toml
+
+# Databases & local files
+*.db
+*.sqlite
+streamlit_history.db
+streamlit_history.db-journal
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
+ENV/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Agent logs / System-generated cache
+.system_generated/
+.gemini/
